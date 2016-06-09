@@ -90,8 +90,14 @@ class Vgsu
     end
 
     result = JSON.parse(res.body)
-    #return true if found some records
-    return result["iTotalDisplayRecords"]!='0'
+
+    val = result["aaData"]
+
+    if result["iTotalDisplayRecords"]!='0'
+      return val
+    else
+      return false
+    end    
   end
 
 end

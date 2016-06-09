@@ -18,6 +18,9 @@ gem 'coffee-rails', '~> 4.1.0'
 
 gem 'slim', '~> 3.0', '>= 3.0.6'
 
+gem 'sinatra', require: false, github: 'sinatra'
+gem 'sidekiq', '~> 4.0', '>= 4.0'
+
 # gem 'roo', '~> 2.4.0'
 gem 'roo-xls'
 
