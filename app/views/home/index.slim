@@ -1,3 +1,5 @@
 =form_tag({:action => :import}, multipart: true) do
+  = email_field :user, :address, placeholder: 'Укажите e-mail, на который будут отправлены результаты', size: 50
+  br
   = file_field_tag :file
   = submit_tag( "Import" )
